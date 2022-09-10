@@ -1,0 +1,53 @@
+button {
+  all: unset;
+  cursor: pointer;
+}
+input {
+  text-align: right;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.point {
+  margin: 20px 0;
+  font-size: 32px;
+}
+.total {
+  font-weight: 700;
+}
+.amount_input {
+}
+
+.wrap {
+  max-width: 900px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.btns {
+  margin: 30px 0;
+}
+
+.btns button {
+  border: 1px solid #000;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.annual_salary {
+  margin-top: 20px;
+}
+
+.after_amount .flex {
+  margin: 10px 0;
+}

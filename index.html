@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>세전 / 세후 연봉계산기</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>연봉계산기</h1>
+      <div class="btns">
+        <button class="year">연봉</button>
+        <button class="month">월급(세후)</button>
+      </div>
+
+      <div class="option">
+        <div class="tax_free flex">
+          <label for="tax_free">비과세</label>
+          <input type="number" placeholder="0" name="tax_free" id="tax_free" />
+        </div>
+        <div class="dependent_family flex">
+          <label for="dependent_family">부양가족</label>
+          <input
+            type="number"
+            placeholder="0"
+            name="dependent_family"
+            id="dependent_family"
+          />
+        </div>
+        <div class="under20 flex">
+          <label for="under20">20세 이하 자녀 수</label>
+          <input type="number" placeholder="0" name="under20" id="under20" />
+        </div>
+      </div>
+
+      <section class="annual_salary">
+        <h3 class="before_amount">
+          연봉
+          <input type="number" class="amount_input" placeholder="0" />
+          원 받으면
+        </h3>
+
+        <div class="after_amount">
+          <h2 class="point">
+            세후월급 :
+            <span class="amount"> 얼마 </span>
+          </h2>
+
+          <h3>세전월급 : 얼마</h3>
+
+          <div class="flex">
+            <span> 국민연금 (4.5%) </span>
+            <span class="km"> 157,500원 </span>
+          </div>
+          <div class="flex">
+            <span> 건강보험 (3.495%) </span>
+            <span class="kk"> 122,320원 </span>
+          </div>
+          <div class="flex">
+            <span> ㄴ요양보험 (12.27%) </span>
+            <span class="yy"> 15,000원 </span>
+          </div>
+          <div class="flex">
+            <span> 고용보험 (0.9%) </span>
+            <span class="ky"> 31,500원 </span>
+          </div>
+          <div class="flex">
+            <span> 근로소득세 (간이세액) </span>
+            <span class="kr"> 142,220원 </span>
+          </div>
+          <div class="flex">
+            <span> ㄴ지방소득세(10%) </span>
+            <span class="jb"> 14,220원 </span>
+          </div>
+          <div class="flex total">
+            <span> 세금 합계 </span>
+            <span> 14,220원 </span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
