@@ -77,6 +77,8 @@ const comma = (num) => {
 // 세금 계산
 const calculating = () => {
   const month_amount = floor(_BEFOREAMOUNT / 12);
+  if (month_amount === 0) return;
+
   const realMonthAmount = month_amount - _TAXFREE;
   const KMBoundery = (sal) => {
     if (sal < 350000) {

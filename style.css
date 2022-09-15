@@ -64,3 +64,6 @@ input::-webkit-inner-spin-button {
 .after_amount .flex {
   margin: 10px 0;
 }
+.after_amount .after_month_sal {
+  color: red;
+}
